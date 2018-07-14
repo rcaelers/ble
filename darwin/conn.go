@@ -135,5 +135,5 @@ func (c *conn) sendReq(id int, args xpc.Dict) (msg, error) {
 }
 
 func (c *conn) sendCmd(id int, args xpc.Dict) error {
-	return c.dev.sendCmd(c.dev.pm, id, args)
+	return c.dev.sendCmd(c.dev.cm, id, args)
 }
